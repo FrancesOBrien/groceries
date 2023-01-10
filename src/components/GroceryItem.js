@@ -2,10 +2,10 @@ const GroceryItem = ({ele}) => {
     return (
       <div className = 'each'>
       <br/>
-    <h3>item: {ele.item}</h3>
-    <h4>brand: {ele.brand}</h4>
-    <h5>units: {ele.units}</h5>
-    <h5>quantity: {ele.quantity}</h5>
+    <h2>{ele.item}</h2>
+    <h3>{ele.brand}</h3>
+    <h5>{ele.units}</h5>
+    <h4>Quantity: {ele.quantity}</h4>
   <h4>Purchased?:</h4> 
       {ele.isPurchased === true ? 
       (<input type="checkbox" checked></input>) : (<input type="checkbox"></input>)}
